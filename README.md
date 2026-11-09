@@ -11,8 +11,8 @@
 
 Нужны macOS 14 или новее и Apple Silicon.
 
-1. Скачайте архив со страницы [Releases](https://github.com/CalebCintary/small-disk-visualizer/releases) и распакуйте его.
-2. Перенесите `Disk Visualizer.app` в «Программы».
+1. Скачайте DMG со страницы [Releases](https://github.com/CalebCintary/small-disk-visualizer/releases) и откройте его.
+2. Перетащите `Disk Visualizer.app` на папку `Applications` в открывшемся окне.
 3. Приложение не нотаризовано, поэтому при первом запуске снимите карантин:
 
 ```bash
@@ -29,4 +29,4 @@ xattr -dr com.apple.quarantine "/Applications/Disk Visualizer.app"
 ./scripts/build-app.sh
 ```
 
-Готовое приложение появится в `build/Disk Visualizer.app`.
+Готовое приложение появится в `build/Disk Visualizer.app`. Чтобы собрать DMG, запустите `./scripts/build-dmg.sh`.
